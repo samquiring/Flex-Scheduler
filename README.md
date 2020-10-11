@@ -21,14 +21,13 @@
  If it is then goes back to step 2
  If it is not then in Class A it goes to a random student and changes its group to group A and calculates based off my algorithm if the change to A was a good      change.
 
-4. If it was not a good change it reverts that student back to its previous group and re-runs #3. If it was a good change it checks if Class A is at the center now.
+4. If it was not a good change it reverts that student back to its previous group and re-runs #3. 
+   If it was a good change then it goes back to step 3.
 
-5. If it was not center it goes back to step 3 agian. If it is center it goes back to step 2 agian.
-
-6. If it is not possible to get given class into the range then it widens the range and checks if that is smaller or equal to the largest range the school is willing to allow. 
+5. If it is not possible to get given class into the range which is determined from my algorithm then it widens the range and checks if that is smaller or equal to the largest range the school is willing to allow. 
  If it is not it turns off a preference like what group students prefer to be in. 
    If there are no more preferences it throws an error telling the user that their range is too small and they must widen it. 
- Runs #1 agian with a widened range. 
+Runs #1 agian with a widened range. 
    
    
    
