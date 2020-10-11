@@ -15,19 +15,19 @@
 
 2. Checks if group A is Within a given range. 
  If it is then goes back to step 1.
- If not it checks within group A it finds the Class that is furthest from the center. Let's call this Class A
+ If not it checks within group A to find the Class that is furthest from the center. Let's call this Class A
 
 3. Checks if Class A is within the range.
  If it is then goes back to step 2
- If it is not then in Class A it goes to a random student and changes its group to group A and calculates based off my algorithm if the change to A was a good      change.
+ If it is not then within Class A it goes to a random student and changes its group to group A and calculates based off my algorithm if the change to A was a good      change.
 
-4. If it was not a good change it reverts that student back to its previous group and re-runs #3. 
-   If it was a good change then it goes back to step 3.
+4. If it was not a good change it reverts that student back to its previous group.
+   It then goes back to step 3.
 
-5. If it is not possible to get given class into the range which is determined from my algorithm then it widens the range and checks if that is smaller or equal to the largest range the school is willing to allow. 
+5. If it is not possible to get a given class into the range then it widens the range and checks if the new range is smaller or equal to the largest range the school is willing to allow. 
  If it is not it turns off a preference like what group students prefer to be in. 
    If there are no more preferences it throws an error telling the user that their range is too small and they must widen it. 
-Runs #1 agian with a widened range. 
+It then runs #1 agian with a widened range. 
    
    
    
